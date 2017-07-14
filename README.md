@@ -1,8 +1,8 @@
 # ADNet-cvpr2017
 
-- ADNet: Action-Decision Networks for Visual Tracking with Deep Reinforcement Learning 
-- [[Project Page]](https://sites.google.com/view/cvpr2017-adnet) [[Paper]](https://drive.google.com/open?id=0B34VXh5mZ22cZUs2Umc1cjlBMFU)
-- [[Homepage]](https://sites.google.com/view/sdyunhome/)
+- ADNet: Action-Decision Networks for Visual Tracking with Deep Reinforcement Learning [[Paper]](https://drive.google.com/open?id=0B34VXh5mZ22cZUs2Umc1cjlBMFU)
+- [[Project Page]](https://sites.google.com/view/cvpr2017-adnet) 
+- Contact: [[MailTo]](mailto:yunsd101@snu.ac.kr) [[Homepage]](https://sites.google.com/view/sdyunhome/)
 
 ### News
 Test codes are uploaded (15 July, 2017).
