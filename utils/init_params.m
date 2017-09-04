@@ -10,6 +10,8 @@ GT_anno_interval = 1;
 % ============================
 % NETWORK PARAMETERS
 % ============================
+opts.train_dbs =  {'vot15', 'vot14', 'vot13'};
+opts.test_db = 'otb';
 opts.train.weightDecay = 0.0005;
 opts.train.momentum = 0.9 ;
 opts.train.learningRate = 10e-5;
@@ -23,15 +25,10 @@ opts.samplePerFrame_small = 10;
 opts.inputSize = [112,112,3];
 opts.stopIou = 0.93;
 opts.meta.inputSize = [112, 112, 3];
-
 opts.train.gt_skip = 1;
 opts.train.rl_num_batches = 5;
-
 opts.train.RL_steps = 10;
-
-
 opts.use_finetune = true;
-
 opts.scale_factor = 1.05;
 
 % test
@@ -50,11 +47,6 @@ opts.finetune_scale_factor = 3.0;
 opts.redet_scale_factor = 3.0;
 opts.finetune_trans = 0.10;
 opts.redet_samples = 256;
-
-% opts.nPos_init = 500;
-% opts.nNeg_init = 1000;
-% opts.nPos_online = 20;
-% opts.nNeg_online = 40;
 
 opts.successThre = 0.5;
 opts.failedThre = 0.5;

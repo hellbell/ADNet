@@ -1,5 +1,5 @@
-function [bboxes, t_sum, precisions] = test_demo(net, vid_path, opts)
-% TEST_DEMO Run tracking on a sequence
+function [bboxes, t_sum, precisions] = adnet_test(net, vid_path, opts)
+% ADNET_DEMO Run tracking on a sequence
 %
 % Sangdoo Yun, 2017.
 
