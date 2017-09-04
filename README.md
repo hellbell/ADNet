@@ -5,8 +5,8 @@
 - Contact: yunsd101@snu.ac.kr [[Homepage]](https://sites.google.com/view/sdyunhome/)
 
 ### News
-Training codes are uploaded (4 Sep, 2017).
-Test codes are uploaded (15 July, 2017).
+- Training codes are uploaded (4 Sep, 2017).
+- Test codes are uploaded (15 July, 2017).
 
 ### Citation
 ```
