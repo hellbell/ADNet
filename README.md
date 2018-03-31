@@ -4,7 +4,11 @@
 - [[Project Page]](https://sites.google.com/view/cvpr2017-adnet) 
 - Contact: yunsd101@snu.ac.kr [[Homepage]](https://sites.google.com/view/sdyunhome/)
 
+### Other implementations
+Tensorflow: (tf-adnet) https://github.com/ildoonet/tf-adnet-tracking 
+
 ### News
+- Major bug fixes (31 Mar. 2018).
 - Training codes are uploaded (4 Sep, 2017).
 - Test codes are uploaded (15 July, 2017).
 
