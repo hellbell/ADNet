@@ -118,8 +118,10 @@ for frameIdx = 1 : vid_info.nframes
         
         net_fc_noah = copy(net_fc);
         net_fc_noah.removeLayer('concat');
-        net_fc_noah.layers(4).inputs = 'x13';
-        net_fc_noah.params(3).value(:,:,512+1:end,:) = [];
+        net_fc_noah.layers(7).inputs = 'x16';
+        net_fc_noah.layers(8).inputs = 'x16';
+        net_fc_noah.params(5).value(:,:,512+1:end,:) = [];
+        net_fc_noah.params(7).value(:,:,512+1:end,:) = [];
         net_fc_noah.rebuild();
         net_fc_noah.move('gpu');
         net_fc.move('gpu');
@@ -127,7 +129,7 @@ for frameIdx = 1 : vid_info.nframes
         [net_fc_noah, ~] =  train_fc_finetune_hem(net_fc_noah, opts, ...
             pos_data, neg_data, pos_action_labels);
         for fci = 1 : 8
-            if fci == 3
+            if fci == 5 || fci == 7
                 net_fc.params(fci).value(:,:,1:512,:) = net_fc_noah.params(fci).value;
             else
                 net_fc.params(fci).value = net_fc_noah.params(fci).value;
@@ -328,8 +330,10 @@ for frameIdx = 1 : vid_info.nframes
         
         net_fc_noah = copy(net_fc);
         net_fc_noah.removeLayer('concat');
-        net_fc_noah.layers(4).inputs = 'x13';
-        net_fc_noah.params(3).value(:,:,512+1:end,:) = [];
+        net_fc_noah.layers(7).inputs = 'x16';
+        net_fc_noah.layers(8).inputs = 'x16';
+        net_fc_noah.params(5).value(:,:,512+1:end,:) = [];
+        net_fc_noah.params(7).value(:,:,512+1:end,:) = [];
         net_fc_noah.rebuild();
         net_fc_noah.move('gpu');
         net_fc.move('gpu');        
@@ -337,7 +341,7 @@ for frameIdx = 1 : vid_info.nframes
         [net_fc_noah, ~] =  train_fc_finetune_hem(net_fc_noah, opts, ...
             pos_data, neg_data, pos_action_labels);
         for fci = 1 : 8
-            if fci == 3
+            if fci == 5 || fci == 7
                 net_fc.params(fci).value(:,:,1:512,:) = net_fc_noah.params(fci).value;
             else
                 net_fc.params(fci).value = net_fc_noah.params(fci).value;

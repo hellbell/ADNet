@@ -20,6 +20,6 @@ opts.visualize = true;
 opts.printscreen = true;
 
 rng(1004);
-[results, t, p] = test_demo(net, vid_path, opts);
+[results, t, p] = adnet_test(net, vid_path, opts);
 fprintf('precision: %f, fps: %f\n', p(20), size(results, 1)/t);
 

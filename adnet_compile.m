@@ -3,7 +3,7 @@ function adnet_compile
 % 
 % Sangdoo Yun, 2017.
 if ispc
-    cudaRoot = 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5';
+    cudaRoot = 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0';
 else
     cudaRoot = '/usr/local/cuda-8.0';
 end
